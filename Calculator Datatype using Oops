@@ -1,0 +1,89 @@
+Hi
+We are Making a calculator datatype using OOPs Concept
+How to Use this Code as a datatype
+First  Save this Code In Python IDLE and Python Shell will open and this Command on Shell
+"from calculatorOops import Calculator"
+then 
+Make a object like(s=Calculator())
+IN this Data type having Some more Features Apart :
+1. Add
+2. Substraction
+3. Multipication
+4. Division
+5. Square
+5. Remainder find
+6. Quotient find
+7. Square 
+8. Square root
+9. cube
+10. cube root
+
+
+
+Code ---
+
+
+class Calculator:
+    def __init__(self):
+        print('''call Method through Object Like
+                   S.Add()
+                   Here S is Object 
+                   Add is Method''')
+        self.num1 = 0
+        self.num2 = 0
+
+    def Add(self):  # 1. ADD
+        self.num1 = int(input("Enter the Number1: "))
+        self.num2 = int(input("Enter the Number2: "))
+        n = self.num1 + self.num2
+        print("Addition of Number: ", n)
+
+    def Substraction(self):  # 2 Substraction
+        self.num1 = int(input("Enter the Number1: "))
+        self.num2 = int(input("Enter the Number2: "))
+        n = self.num1 - self.num2
+        print("Substraction of number: ", n)
+
+    def Multiplication(self):  # 3 Multipication
+        self.num1 = int(input("Enter the Number1: "))
+        self.num2 = int(input("Enter the Number2: "))
+        n = self.num1 * self.num2
+        print("Multiplication of number: ", n)
+
+    def Divide(self):  # 4 Division
+        self.num1 = int(input("Enter the Number1: "))
+        self.num2 = int(input("Enter the Number2: "))
+        n = self.num1 / self.num2
+        print("Division of Number: ", n)
+
+    def remainder(self):  # 5 Remainder
+        self.num1 = int(input("Enter the Number1: "))
+        self.num2 = int(input("Enter the Number2: "))
+        n = self.num1 % self.num2
+        print("Remainder After Division of number: ", n)
+
+    def Quotient(self):  # 6 Quotient
+        self.num1 = int(input("Enter the Number1: "))
+        self.num2 = int(input("Enter the Number2: "))
+        n = self.num1 // self.num2
+        print("Quotient of Division of Number: ")
+
+    def Square(self):  # 7 Square
+        self.num1 = int(input("Enter the Number1: "))
+        n = self.num1 ** self.num1
+        print("Square of number: ", n)
+
+    def Square_root(self):  # 8  SquareRoot
+        self.num1 = int(input("Enter the Number1: "))
+        n = self.num1 ** .5
+        print("Square root of number: ", n)
+
+    def Cube(self):  # 9 Cube
+        self.num1 = int(input("Enter the Number1: "))
+        n = self.num1** 3
+        print("Cube of Number: ", n)
+
+    def cube_root(self):  # 10 Cuberoot
+        self.num1 = int(input("Enter the Number1: "))
+        n = self.num1 ** (1 / 3)
+        print("Cube root of Number: ", n)
