@@ -1,0 +1,30 @@
+class Employee:
+      #define Constructor
+      def __init__(self,aname,asalary,arole):
+          self.name=aname
+          self.salary=asalary
+          self.role=arole
+
+    # define Method
+      def Printdetail(self):
+        output= f"The Name is {self.name}, Salary is {self.salary} and the Role is {self.role}"
+        return output
+#call class through object
+Abhishek=Employee("Abhishek",22,"Quality Analyst")
+
+
+
+# Here We Inherit the Employee class in Programmer
+class Programmer(Employee):
+    def __init__(self,aname,asalary,arole,Langauge):
+        self.name = aname
+        self.salary = asalary
+        self.role = arole
+        self.lang=Langauge
+    def Printprog(self):
+        out=f"Name is {self.name},salary is {self.salary},and Role is {self.role}, and Programming Langauge:{self.lang}"
+        return out
+Abhi=Programmer("Abhi",34,"QA",["Pyhton","Cpp"])
+
+print(Abhishek.Printdetail())
+print(Abhi.Printprog())
